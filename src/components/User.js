@@ -1,11 +1,10 @@
-const User = (props) => {
-  console.log(props.name);
+const User = ({ img, name, hobbies }) => {
+  console.log(name);
   return (
     <section>
-      <img src={props.img} alt={props.name} />
-      <h1>{props.name}</h1>
-      <h3>{props.hobbies}</h3>
-      <p>{props.userData.location}</p>
+      <img src={img} alt={name} />
+      <h1>{name}</h1>
+      <h3>{hobbies}</h3>
     </section>
   );
 };

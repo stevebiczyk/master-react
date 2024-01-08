@@ -8,11 +8,11 @@ function App() {
         name="Istvan Biczyk"
         age="45"
         hobbies={["coding", "reading", "gaming"]}
-        userData={{
-          name: "Istvan Biczyk",
-          age: 45,
-          location: "United Kingdom",
-        }}
+        // userData={{
+        //   name: "Istvan Biczyk",
+        //   age: 45,
+        //   location: "United Kingdom",
+        // }}
       />
     </>
   );
