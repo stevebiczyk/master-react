@@ -1,30 +1,19 @@
+import User from "./components/User";
+
 function App() {
-  const userInfo = [
-    {
-      name: "John Doe",
-      email: "test1@gmail.com",
-      location: "United States",
-    },
-    {
-      name: "Steve Smith",
-      email: "test2@gmail.com",
-      location: "United Kingdom",
-    },
-    {
-      name: "Jane Doe",
-      email: "test3@gmail.com",
-      location: "United States",
-    },
-  ];
   return (
     <>
-      {userInfo.map((user) => (
-        <ul key={Math.random() * 10}>
-          <li>{user.name}</li>
-          <li>{user.email}</li>
-          <li>{user.location}</li>
-        </ul>
-      ))}
+      <User
+        img="https://avatars.githubusercontent.com/u/105976995?s=400&u=aa5237d4dee2de7b7ab122a8b82da50043ebc9bb&v=4"
+        name="Istvan Biczyk"
+        age="45"
+        hobbies={["coding", "reading", "gaming"]}
+        userData={{
+          name: "Istvan Biczyk",
+          age: 45,
+          location: "United Kingdom",
+        }}
+      />
     </>
   );
 }
